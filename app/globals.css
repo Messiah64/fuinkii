@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/minecraft.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 38 92% 50%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 38 92% 50%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 38 92% 50%;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: "Minecraft", monospace;
+}
+
+/* Font Hierarchy */
+.font-minecraft {
+  font-family: "Minecraft", monospace;
+  letter-spacing: 0.02em;
+}
+
+.font-minecraft-title {
+  font-family: "Minecraft", monospace;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.font-minecraft-heading {
+  font-family: "Minecraft", monospace;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+.font-minecraft-body {
+  font-family: "Minecraft", monospace;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* Premium rounded images */
+.premium-image {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(245, 158, 11, 0.1);
+  overflow: hidden;
+}
+
+/* Premium carousel styling */
+.premium-carousel {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.8) 0%, rgba(17, 24, 39, 0.9) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Minecraft-style pixelated border */
+.minecraft-border {
+  image-rendering: pixelated;
+  box-shadow: 0 0 0 2px #000, inset 0 0 0 2px #000;
+}
+
+/* Animated pixel effect */
+@keyframes pixel-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.7;
+  }
+}
+
+.pixel-flicker {
+  animation: pixel-flicker 3s infinite;
+}
+
+/* Premium glow effect */
+.premium-glow {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+}
