@@ -16,6 +16,16 @@ export default function ParallaxHero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
+  const handleScrollToGallery = () => {
+    const galleryElement = document.getElementById("gallery")
+    if (galleryElement) {
+      galleryElement.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      })
+    }
+  }
+
   return (
     <div ref={ref} className="relative h-screen overflow-hidden">
       {/* Background layers */}
@@ -84,24 +94,12 @@ export default function ParallaxHero() {
               <Link href="https://lantern.fillout.com/buy">BUY NOW — $80 SGD</Link>
             </Button>
             <Button
-              asChild
               variant="outline"
               size="lg"
               className="border-amber-600/50 text-amber-400 hover:bg-amber-600/10 hover:border-amber-600 font-minecraft-body text-lg px-10 py-6 backdrop-blur-sm"
+              onClick={handleScrollToGallery}
             >
-              <button
-                onClick={() => {
-                  const galleryElement = document.getElementById("gallery")
-                  if (galleryElement) {
-                    galleryElement.scrollIntoView({
-                      behavior: "smooth",
-                      block: "center",
-                    })
-                  }
-                }}
-              >
-                See The Lantern
-              </button>
+              See The Lantern
             </Button>
           </motion.div>
         </motion.div>
