@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Pickaxe, ChevronRight, Clock, Package, Sparkles, Leaf, Diamond, Hammer, Recycle } from "lucide-react"
+import { Pickaxe, ChevronRight, Clock, Package, Sparkles, Leaf, Diamond, Palette, Hammer, Recycle } from "lucide-react"
 import CountdownTimer from "@/components/countdown-timer"
 import ParallaxHero from "@/components/parallax-hero"
 import PixelatedText from "@/components/pixelated-text"
@@ -53,7 +53,7 @@ export default function Home() {
                 size="lg"
                 className="bg-amber-600 hover:bg-amber-700 text-black font-minecraft-body text-lg px-8 py-6 premium-glow"
               >
-                <Link href="https://lantern.fillout.com/buy">BUY NOW — $100 SGD</Link>
+                <Link href="https://lantern.fillout.com/buy">BUY NOW — $80 SGD</Link>
               </Button>
               <div className="flex items-center gap-3 bg-gray-800/80 p-4 rounded-lg border border-amber-600/20">
                 <Clock className="text-amber-600 flex-shrink-0" />
@@ -353,25 +353,32 @@ export default function Home() {
             <PixelatedText>What it Means to Own a Fūinkii</PixelatedText>
           </h2>
           <p className="text-lg md:text-xl font-minecraft-body mb-16 max-w-3xl mx-auto leading-relaxed">
-            To buy a Fūinkii isn't to buy an object — it's to own a digital fantasy brought to life.
+            To own a Fūinkii is not to purchase an object — it's to hold a pixel-born fantasy, handcrafted for the real world.
           </p>
-
+      
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm">
+            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm hover:scale-105 transition-transform">
               <Sparkles className="h-16 w-16 mx-auto mb-4" />
               <h3 className="font-minecraft-heading text-lg mb-2">Curate your space with meaning</h3>
+              <p className="font-minecraft-body text-sm opacity-80">A piece that speaks louder than generic decor ever could.</p>
             </div>
-            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm">
-              <div className="h-16 w-16 mx-auto mb-4 flex items-center justify-center text-4xl">🧠</div>
+      
+            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm hover:scale-105 transition-transform">
+              <Palette className="h-16 w-16 mx-auto mb-4" />
               <h3 className="font-minecraft-heading text-lg mb-2">Choose art, not mass production</h3>
+              <p className="font-minecraft-body text-sm opacity-80">Every lantern is uniquely handcrafted—no factories, just vision.</p>
             </div>
-            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm">
+      
+            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm hover:scale-105 transition-transform">
               <Leaf className="h-16 w-16 mx-auto mb-4" />
               <h3 className="font-minecraft-heading text-lg mb-2">Support sustainability, not superficiality</h3>
+              <p className="font-minecraft-body text-sm opacity-80">Made from ethically repurposed PLA with natural pigments.</p>
             </div>
-            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm">
+      
+            <div className="bg-amber-700/30 p-8 rounded-xl backdrop-blur-sm hover:scale-105 transition-transform">
               <Diamond className="h-16 w-16 mx-auto mb-4" />
-              <h3 className="font-minecraft-heading text-lg mb-2">Own what only 49 others will ever have</h3>
+              <h3 className="font-minecraft-heading text-lg mb-2">Own what only 49 others ever will</h3>
+              <p className="font-minecraft-body text-sm opacity-80">An ultra-limited drop. No restocks. No second chances.</p>
             </div>
           </div>
         </div>
@@ -412,7 +419,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-2">
               <Diamond size={16} />
-              <span>Price: $100 SGD</span>
+              <span>Price: $80 SGD</span>
             </div>
           </div>
         </div>
