@@ -28,6 +28,9 @@ export default function ParallaxHero() {
           fill
           className="object-cover opacity-40"
           priority
+          quality={60}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
           sizes="100vw"
         />
       </motion.div>
@@ -78,7 +81,7 @@ export default function ParallaxHero() {
               size="lg"
               className="bg-amber-600 hover:bg-amber-700 text-black font-minecraft-body text-lg px-10 py-6 premium-glow"
             >
-              <Link href="https://lantern.fillout.com/buy">BUY NOW — $100 SGD</Link>
+              <Link href="https://lantern.fillout.com/buy">BUY NOW — $80 SGD</Link>
             </Button>
             <Button
               asChild
